@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft História</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Conquistas</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="limsta-menu__link">Overworld</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Nether</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">The End</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Combate</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Exploração</a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Conquistas</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Overworld</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Nether</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">The End</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Combate</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Exploração</a>
+                </li>m
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">estatísticas</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Meu mundo</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">mojang store</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Serbaino</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">minecraft bedrock</h2>
+        <p class="banner__texto">o que você pode encontra no seu mundo</p>
+        <input type="search" class="banner__pesquisa" placeholder="qual sera sua proxima aventura">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">estruturas</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/Templo_do_Deserto.jpeg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/Jungle_Temple.jpeg"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/Ocean_Monument.jpeg"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/Woodland_Mansion.jpeg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/StrongholdPortalRoom.jpeg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/Bastion.jpeg" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Minecraft Bedrock</h3>
+                        <h2 class="descrição__titulo-livro">Vinicios 13</h2>
+                        <p class="descrição__texto">100% survival</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/13.jpeg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mods mais famosos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/637801316302309362.jpeg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/avaritia.jpeg"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/chisel.jpeg"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/CreateLogo.jpeg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/applied.jpeg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/biomes.jpeg" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Minecraft Java Mods</h3>
+                        <h2 class="descrição__titulo-livro">LGGJ</h2>
+                        <p class="descrição__texto">Criador de conteúdo sobre minecraft
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/skinlggj.jpeg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">irmandade</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Lggj</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Aphu</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Deletinho</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Ralls</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Foca</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Nait</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tuguim</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Pedrux</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das atualização</h2>
+            <p class="contato__texto">novas versõa</p>
+        </div>
+        <input type="email" placeholder="crie su aconta" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">mojang</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação</li>
+            <li class="lista-rodapé__item">
+                <img src="img/1minecarftjava.jpg" alt="Logo da casa do código">
+                <a href="#" class="lista-rodapé__link">Minecraft Java Edition</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1minecraftbedrock.jpg" alt="Logo da caelum">
+                <a href="#" class="lista-rodapé__link">Minecraft Bedrock Edition</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1Minecraft_Dungeons (1).jpg" alt="Logo da caelum">
+                <a href="#" class="lista-rodapé__link">Minecraft Dungeous</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1minecraftlegends (1).jpg" alt="Logo da caelum">
+                <a href="#" class="lista-rodapé__link">Minecraft Legends</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Youtubers históricos</li>
+            <li class="lista-rodapé__item">
+                <img src="img/skinvenom.jpeg" alt="Logo da Alura" class="container_img1">
+                <a href="#" class="lista-rodapé__link">VenomExtreme</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/skinmonark.jpg" alt="Logo da Alura para Empresas">
+                <a href="#" class="lista-rodapé__link">Monark</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/skinrezende.jpg" alt="Logo da Alura Latam">
+                <a href="#" class="lista-rodapé__link">Rezende Evil</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/skinauthentic.jpg" alt="Logo da Alura START">
+                <a href="#" class="lista-rodapé__link">AuthenticGames</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/skinviniccius13.jpg" alt="Logo da Music Dot">
+                <a href="#" class="lista-rodapé__link">Vinnicius13</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/skinpactw.jpg" alt="Logo da Alura Lingua">
+                <a href="#" class="lista-rodapé__link">Pactw</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/skinmikethelink.jpg" alt="Logo da PM3">
+                <a href="#" class="lista-rodapé__link">Mikethelink</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Séries Nostálgicas</li>
+            <li class="lista-rodapé__item">
+                <img src="img/1policiaeladrao (2).jpg" alt="Logo do Hipsters ponto Tech">
+                <a href="#" class="lista-rodapé__link">Polícia e ladrão</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1chumelabs.jpg" alt="Logo do Scuba Dev">
+                <a href="#" class="lista-rodapé__link">ChumeLabs</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1thewalkingcraft.jpg" alt="Logo do Layers ponto Tech">
+                <a href="#" class="lista-rodapé__link">The Walking Craft</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1paraíso.jpg" alt="Logo do Like a Boss">
+                <a href="#" class="lista-rodapé__link">Paraíso</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1fugaimpossível.jpg" alt="Logo do Carreira sem fronteiras">
+                <a href="#" class="lista-rodapé__link">Fuga Impossível</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1escondeesconde.jpg" alt="Logo do Hipsters ponto jobs">
+                <a href="#" class="lista-rodapé__link">Esconde-Esconde</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/1ultimato.jpg" alt="Logo do GUJ">
+                <a href="#" class="lista-rodapé__link">Ultimato</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
